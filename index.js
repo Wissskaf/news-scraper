@@ -14,7 +14,7 @@ const schedule = require('node-schedule');
 const TelegramBot = require('node-telegram-bot-api');
 const token = '6476301699:AAFpSWOc2hkJT5gRSYDNBlRCFJNp6F7J460';
 const chatId = '979754657';
-const bot = new TelegramBot(token, { polling: false });
+const bot = new TelegramBot(token, { polling: true });
 
 function arraysAreEqual(arr1, arr2) {
   if (!arr1 || !arr2) return false; // Handle undefined cases
